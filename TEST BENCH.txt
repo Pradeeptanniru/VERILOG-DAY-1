@@ -1,0 +1,103 @@
+//AND GATE
+module andgate_tb;
+reg a;
+reg b;
+wire y;
+andgate uut(.a(a),.b(b),.y(y));
+initial begin
+a=0;b=0;#100;
+a=0;b=1;#100;
+a=1;b=0;#100;
+a=1;b=1;#100;
+end
+endmodule
+
+
+//OR GATE
+module orgate_tb;
+reg a;
+reg b;
+wire y;
+orgate uut(.a(a),.b(b),.y(y));
+initial begin
+a=0;b=0;#100;
+a=0;b=1;#100;
+a=1;b=0;#100;
+a=1;b=1;#100;
+end
+endmodule
+
+
+
+//NAND GATE
+module nandgate_tb;
+reg a;
+reg b;
+wire y;
+nandgate uut(.a(a),.b(b),.y(y));
+initial begin
+a=0;b=0;#100;
+a=0;b=1;#100;
+a=1;b=0;#100;
+a=1;b=1;#100;
+end
+endmodule
+
+
+
+//NOR GATE
+module norgate_tb;
+reg a;
+reg b;
+wire y;
+norgate uut(.a(a),.b(b),.y(y));
+initial begin
+a=0;b=0;#100;
+a=0;b=1;#100;
+a=1;b=0;#100;
+a=1;b=1;#100;
+end
+endmodule
+
+
+//EX-OR GATE
+module xorgate_tb;
+reg a;
+reg b;
+wire y;
+xorgate uut(.a(a),.b(b),.y(y));
+initial begin
+a=0;b=0;#100;
+a=0;b=1;#100;
+a=1;b=0;#100;
+a=1;b=1;#100;
+end
+endmodule
+
+
+//EX-NOR GATE
+module xnorgate_tb;
+reg a;
+reg b;
+wire y;
+xnorgate uut(.a(a),.b(b),.y(y));
+initial begin
+a=0;b=0;#100;
+a=0;b=1;#100;
+a=1;b=0;#100;
+a=1;b=1;#100;
+end
+endmodule
+
+
+//NOT GATE
+module notgate_tb;
+reg a;
+wire y;
+notgate uut(.a(a),.y(y));
+initial begin
+a=0;#100
+a=1;#100;
+end
+endmodule
+

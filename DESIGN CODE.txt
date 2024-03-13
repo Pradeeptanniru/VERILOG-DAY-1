@@ -1,0 +1,57 @@
+//AND GATE
+module andgates(
+    input a,b,
+    output y
+    );
+ assign y=a&b;
+endmodule
+
+//OR GATE
+module orgate(
+    input a,b,
+    output y
+    );
+ assign y=a|b;
+endmodule
+
+//NAND GATE
+module nandgates(
+    input a,b,
+    output y
+    );
+ assign y=!(a&b);
+endmodule
+
+//NOR GATE
+module norgate(
+    input a,b,
+    output y
+    );
+ assign y=!(a|b);
+endmodule
+
+//EX-OR GATE
+module xorgate(
+    input a,b,
+    output y
+    );
+ assign y=a^b;
+endmodule
+
+
+//EX-NOR GATE
+module xnorgate(
+    input a,b,
+    output y
+    );
+ assign y=!(a^b);
+endmodule
+
+
+//NOT GATE
+module notgate(
+    input a,
+    output y
+    );
+ assign y=!a;
+endmodule
